@@ -6,8 +6,10 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hibiscus El Salvador</title>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <link rel="stylesheet" href="/static/main.css" />
         <link <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -46,8 +48,8 @@
             </div>
             <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
                 <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
-                <a href="{{url_for('swimmwear')}}" class="w3-bar-item w3-button">Swimmwear</a>
-                <a href="{{url_for('otros')}}" class="w3-bar-item w3-button">Otros</a>
+                <a href="http://127.0.0.1:5000/product" class="w3-bar-item w3-button">Swimmwear</a>
+                <a href="http://127.0.0.1:5000/product" class="w3-bar-item w3-button">Otros</a>
             </div>
             <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
@@ -78,8 +80,8 @@
                     <a href="./" target="_blank">Hibiscus El Salvador</a>
                     <div id="headerM">
                         <p class="w3-right">
-                            <a href="/templates/cart.html"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
-                            <a href="/templates/login-hsv.html"><i class="fa fa-user w3-margin-right"></i></a>
+                            <a href="http://127.0.0.1:5000/cart"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+                            <a href="http://127.0.0.1:5000/login"><i class="fa fa-user w3-margin-right"></i></a>
                         </p>
                     </div>
                 </div>
@@ -88,20 +90,23 @@
             <body>
                 <h1>Login form</h1>
                 <hr>
-
-                <div class="container">
-                    <h2>login form</h2>
-                    <label for="user">user</label>
+                <form action="http://127.0.0.1:5000/login" method="post">
+                    <label for="user">user:</label><br>
                     <input type="text" name="user" id="user" placeholder="user...">
-                    <label for="passw">password</label>
-                    <input type="text" name="passw" id="passw" placeholder="password...">
-                    <button onclick="checkLogin()">Log in</button>
-                </div>
+                    <br><br>
+
+                    <label for="passwd">password:</label><br>
+                    <input type="password" name="passwd" id="passwd" placeholder="password...">
+                    <br><br>
+                    <div class="g-recaptcha" data-sitekey="6LeB1fAbAAAAAOftKitfhS2NIsINmq8_jA-GkAKl"></div>
+                    <br><br>
+                    <input type="submit" name="mysubmit" value="Log in">
+                </form>
 
                 <br>
                 <hr>
                 <div>
-                    <a href="/templates/registration-hsv.html">Go to registration</a>
+                    <a href="http://127.0.0.1:5000/registration">Go to registration</a>
                 </div>
             </body>
 
@@ -184,9 +189,13 @@
             </div>
         </div>
 
-        <script src="{{url_for('static', filename='cart.js')}}"></script>
-        <script src="{{url_for('static', filename='preload.js')}}"></script>
-        <script src="{{url_for('static', filename='main.js')}}"></script>
+        <script src="/static/js/cart.js"></script>
+        <script src="/static/js/preload.js"></script>
+        <script src="/static/js/main.js"></script>
+        <script src="/static/js/products.js"></script>
+        <script src="/static/js/index.js"></script>
+        <script src="/static/js/slider.js"></script>
+        <script src="/static/js/jquery.js"></script>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     </body>
 

@@ -1,6 +1,10 @@
 from flask import Flask, render_template
+from routes.register_routes import RegisterRoutes
+from routes.logprocess_routes import LogProcessRoutes
 
 app = Flask(__name__)
+RegisterRoutes.configure_routes(app)
+LogProcessRoutes.configure_routes(app)
 
 
 @app.route("/")
@@ -8,24 +12,9 @@ def index():
     return render_template("index-prueba.html")
 
 
-@app.route("/login")
-def login():
-    return render_template("login-hsv.html")
-
-
-@app.route("/registration")
-def registration():
-    return render_template("registration-hsv.html")
-
-
 @app.route("/product")
 def swimmwear():
     return render_template("product.html")
-
-
-@app.route("/otros")
-def otros():
-    return render_template("otros.html")
 
 
 @app.route("/cart")
@@ -35,7 +24,7 @@ def cart():
 
 @app.route("/checkout")
 def checkout():
-    return render_template("checkout.html")
+    return render_template("checkout-hsv.html")
 
 
 @app.route("/dashboardadmin")
