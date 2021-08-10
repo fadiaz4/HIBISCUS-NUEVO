@@ -12,14 +12,24 @@ def index():
     return render_template("index-prueba.html")
 
 
-@app.route("/product")
+@app.route("/swimmwear")
 def swimmwear():
-    return render_template("product.html")
+    return render_template("swimmwear.html")
+
+
+@app.route("/swimmwear2")
+def swimmwear2():
+    return render_template("swimmwear2.html")
+
+
+@app.route("/otros")
+def otros():
+    return render_template("otros.html")
 
 
 @app.route("/cart")
 def cart():
-    return render_template("cart.html")
+    return render_template("cart-hsv.html")
 
 
 @app.route("/checkout")

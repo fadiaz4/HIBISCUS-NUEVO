@@ -3,7 +3,7 @@
 <title>Hibiscus El Salvador</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/static/css/stylecart.css">
+<link rel="stylesheet" href="/static/stylecart.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -30,14 +30,14 @@
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
       <div class="nav-brand">
-        <a href="index-prueba.html">
+        <a href="http://127.0.0.1:5000">
           <img src="/static/images/hibiscusSV.png" style="z-index:3;width:7rem" />
         </a>
       </div>
       <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
         <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
-        <a href="{{url_for('product')}}" class="w3-bar-item w3-button">Swimmwear</a>
-        <a href="{{url_for('product')}}" class="w3-bar-item w3-button">Otros</a>
+        <a href="http://127.0.0.1:5000/swimmwear" class="w3-bar-item w3-button">Swimmwear</a>
+        <a href="http://127.0.0.1:5000/otros" class="w3-bar-item w3-button">Otros</a>
       </div>
       <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
@@ -66,11 +66,11 @@
     <!-- Encabezado superior -->
     <header class="w3-container w3-xlarge">
       <div class="nav">
-        <a href="/templates/index-prueba.html">Hibiscus El Salvador</a>
+        <a href="http://127.0.0.1:500">Hibiscus El Salvador</a>
         <div id="headerM">
           <p class="w3-right">
-            <a href="{{url_for('cart')}}"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
-            <a href="{{url_for('login')}}"><i class="fa fa-user w3-margin-right"></i></a>
+            <a href="http://127.0.0.1:5000/cart"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+            <a href="http://127.0.0.1:5000/login"><i class="fa fa-user w3-margin-right"></i></a>
           </p>
         </div>
       </div>
@@ -89,7 +89,7 @@
         </div>
         <button onclick="clearAll()"> Eliminar todos<i
             class="fa fa-trash fa-2x w3-margin-rigth w3-margin-left"></i></button>
-        <button><a href="{{url_for('checkout')}}">Procede a pagar<i
+        <button><a href="http://127.0.0.1:5000/checkout">Procede a pagar<i
               class="fa fa-credit-card-alt fa-2x w3-margin-rigth w3-margin-left"></i></a></button>
       </div>
 
