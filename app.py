@@ -9,7 +9,7 @@ LogProcessRoutes.configure_routes(app)
 
 @app.route("/")
 def index():
-    return render_template("index-prueba.html")
+    return render_template("index.html")
 
 
 @app.route("/swimmwear")
@@ -29,22 +29,22 @@ def otros():
 
 @app.route("/cart")
 def cart():
-    return render_template("cart-hsv.html")
+    return render_template("cart.html")
 
 
 @app.route("/checkout")
 def checkout():
-    return render_template("checkout-hsv.html")
+    return render_template("checkout.html")
 
 
-@app.route("/dashboardadmin")
+@app.route("/dashboard1")
 def dashboardadmin():
-    return render_template("dashboardadmin-hsv.html")
+    return render_template("dashboard1.html")
 
 
-@app.route("/dashboardclient")
+@app.route("/dashboard2")
 def dashboardclient():
-    return render_template("dashboardclient-hsv.html")
+    return render_template("dashboard2.html")
 
 
 if __name__ == "__main__":
