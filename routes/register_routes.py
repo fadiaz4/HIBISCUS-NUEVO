@@ -7,10 +7,10 @@ import bcrypt
 class RegisterRoutes:
     @staticmethod
     def configure_routes(app):
-        @app.route("/registration", methods=["GET", "POST"])
-        def registration():
+        @app.route("/register", methods=["GET", "POST"])
+        def register():
             if request.method == "GET":
-                return render_template("registration-hsv.html")
+                return render_template("register.html")
             elif request.method == "POST":
                 recHelper = RecaptchaHelper(request)
                 if recHelper.validateRecaptcha():
@@ -40,8 +40,8 @@ class RegisterRoutes:
                             # return "register validRecaptcha uniqueUser Passw==ConfPassw post"
 
                         else:
-                            return redirect("registration")
+                            return redirect("register")
                     else:
-                        return redirect("registration")
+                        return redirect("register")
                 else:
-                    return redirect("registration")
+                    return redirect("register")

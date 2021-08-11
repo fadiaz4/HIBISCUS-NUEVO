@@ -9,7 +9,7 @@ class LogProcessRoutes:
         @app.route("/login", methods=["GET", "POST"])
         def login():
             if request.method == "GET":
-                return render_template("login-hsv.html")
+                return render_template("login.html")
             elif request.method == "POST":
                 logic = UserLogic()
                 username = request.form["user"]
@@ -27,7 +27,7 @@ class LogProcessRoutes:
                         # se valido la password, se puede crear sesion y pasar al dashboard
                         session["login_user"] = username
                         session["loggedIn"] = True
-                        return redirect("dashboardadmin")
+                        return redirect("dashboard2")
                     else:
                         return redirect("login")
                 else:
