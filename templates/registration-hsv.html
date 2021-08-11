@@ -1,102 +1,108 @@
-<!DOCTYcE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html>
 
-    !DOCTYPE html>
-    <html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hibiscus El Salvador</title>
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        .w3-sidebar a {
+            font-family: "Poppins", sans-serif
+        }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hibiscus El Salvador</title>
-        <link rel="stylesheet" href="/static/css/main.css" />
-        <link <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet">>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-        <style>
-            .w3-sidebar a {
-                font-family: "Poppins", sans-serif
-            }
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .w3-wide {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
 
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            .w3-wide {
-                font-family: "Poppins", sans-serif;
-            }
-        </style>
-    </head>
+<body class="w3-content" style="max-width:1200px">
 
-    <body class="w3-content" style="max-width:1200px">
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+        <div class="w3-container w3-display-container w3-padding-16">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+            <h3 class="w3-wide"><b><img src="/static/images/hibiscusSV.png"></b></h3>
+        </div>
+        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+            <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
+            <a href="http://127.0.0.1:5000/swimmwear" class="w3-bar-item w3-button">Swimmwear</a>
+            <a href="http://127.0.0.1:5000/otros" class="w3-bar-item w3-button">Otros</a>
+        </div>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
+            onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a>
+    </nav>
 
-        <!-- Sidebar -->
-        <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-            <div class="w3-container w3-display-container w3-padding-16">
-                <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-                <h3 class="w3-wide"><b><img src="/static/images/hibiscusSV.png"></b></h3>
+    <!-- Menú de arriba en pantallas pequeñas -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-padding-24 w3-wide"><img src="/static/images/hibiscusSV.png"></div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
+                class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Abriendo la sidebar en pantallas pequeñas-->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- Contenido de la página -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <!-- Lanzar contenido en pantallas pequeñas -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Encabezado superior -->
+        <!-- Encabezado superior -->
+        <header class="w3-container w3-xlarge">
+            <div class="nav">
+                <a href="./" target="_blank">Hibiscus El Salvador</a>
+                <div id="headerM">
+                    <p class="w3-right">
+                        <a href="http://127.0.0.1:5000/cart"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+                        <a href="http://127.0.0.1:5000/login"><i class="fa fa-user w3-margin-right"></i></a>
+                    </p>
+                </div>
             </div>
-            <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-                <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
-                <a href="http://127.0.0.1:5000/swimmwear" class="w3-bar-item w3-button">Swimmwear</a>
-                <a href="http://127.0.0.1:5000/otros" class="w3-bar-item w3-button">Otros</a>
-            </div>
-            <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
-                onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a>
-        </nav>
-
-        <!-- Menú de arriba en pantallas pequeñas -->
-        <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-            <div class="w3-bar-item w3-padding-24 w3-wide"><img src="/static/images/hibiscusSV.png"></div>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
-                    class="fa fa-bars"></i></a>
         </header>
 
-        <!-- Abriendo la sidebar en pantallas pequeñas-->
-        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-            id="myOverlay"></div>
 
-        <!-- Contenido de la página -->
-        <div class="w3-main" style="margin-left:250px">
+        <body>
+            <h1>Formulario de registro</h1>
 
-            <!-- Lanzar contenido en pantallas pequeñas -->
-            <div class="w3-hide-large" style="margin-top:83px"></div>
-
-            <!-- Encabezado superior -->
-            <!-- Encabezado superior -->
-            <header class="w3-container w3-xlarge">
-                <div class="nav">
-                    <a href="./" target="_blank">Hibiscus El Salvador</a>
-                    <div id="headerM">
-                        <p class="w3-right">
-                            <a href="http://127.0.0.1:5000/cart"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
-                            <a href="http://127.0.0.1:5000/login"><i class="fa fa-user w3-margin-right"></i></a>
-                        </p>
-                    </div>
-                </div>
-            </header>
-
-
-            <body>
-                <div class="container">
-                    <h2>Registration form</h2>
-                    <label for="user_reg">user</label>
-                    <input type="text" name="user" id="user_reg" placeholder="user...">
-                    <label for="passw_reg">password</label>
-                    <input type="text" name="passw" id="passw_reg" placeholder="password...">
-                    <button onclick="registerNewUser()">Register</button>
-                </div>
-
-                <br>
+            <form action="http://127.0.0.1:5000/registration" method="post">
+                <label for="user">user:</label><br>
+                <input type="text" name="user" id="user" placeholder="user...">
+                <br><br>
+                <label for="email">email:</label><br>
+                <input type="email" name="email" id="email" placeholder="email...">
+                <br><br>
+                <label for="password">password:</label><br>
+                <input type="password" name="password" id="password" placeholder="password...">
+                <br><br>
+                <label for="confpassword">confirm password:</label><br>
+                <input type="password" name="confpassword" id="confpassword" placeholder="password...">
+                <br><br>
+                <div class="g-recaptcha" data-sitekey="6LeB1fAbAAAAAOftKitfhS2NIsINmq8_jA-GkAKl"></div>
+                <br><br>
+                <input type="submit" value="Register">
 
                 <div>
                     <a href="http://127.0.0.1:5000/login">Go to login</a>
@@ -166,33 +172,33 @@
                 </div>
 
                 <!-- Contenido del final de la página -->
-        </div>
+    </div>
 
-        <!-- Suscripción -->
-        <div id="newsletter" class="w3-modal">
-            <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
-                <div class="w3-container w3-white w3-center">
-                    <i onclick="document.getElementById('newsletter').style.display='none'"
-                        class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-                    <h2 class="w3-wide">SUSCRÍBETE</h2>
-                    <p>Únete a nuestra lista de correo para recibir actualizaciones sobre nuevas
-                        colecciones
-                        y ofertas especiales.</p>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-                    <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
-                        onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
-                </div>
+    <!-- Suscripción -->
+    <div id="newsletter" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+            <div class="w3-container w3-white w3-center">
+                <i onclick="document.getElementById('newsletter').style.display='none'"
+                    class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+                <h2 class="w3-wide">SUSCRÍBETE</h2>
+                <p>Únete a nuestra lista de correo para recibir actualizaciones sobre nuevas
+                    colecciones
+                    y ofertas especiales.</p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+                <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
+                    onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
             </div>
         </div>
+    </div>
 
-        <script src="/static/js/cart.js"></script>
-        <script src="/static/js/preload.js"></script>
-        <script src="/static/js/main.js"></script>
-        <script src="/static/js/products.js"></script>
-        <script src="/static/js/index.js"></script>
-        <script src="/static/js/slider.js"></script>
-        <script src="/static/js/jquery.js"></script>
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    </body>
+    <script src="/static/js/cart.js"></script>
+    <script src="/static/js/preload.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/products.js"></script>
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/slider.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
 
-    </html>
+</html>

@@ -8,7 +8,7 @@ class RegisterRoutes:
     @staticmethod
     def configure_routes(app):
         @app.route("/registration", methods=["GET", "POST"])
-        def register():
+        def registration():
             if request.method == "GET":
                 return render_template("registration-hsv.html")
             elif request.method == "POST":
