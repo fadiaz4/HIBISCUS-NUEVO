@@ -1,8 +1,11 @@
 from flask import Flask, render_template
+from flask_restful import Api
 from routes.register_routes import RegisterRoutes
 from routes.logprocess_routes import LogProcessRoutes
 
 app = Flask(__name__)
+api = Api(app)
+
 RegisterRoutes.configure_routes(app)
 LogProcessRoutes.configure_routes(app)
 
