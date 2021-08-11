@@ -8,7 +8,7 @@ class UserLogic(PybaLogic):
     def insertUser(self, userName, userEmail, password, salt):
         database = self.createDatabaseObj()
         sql = (
-            "INSERT INTO `user` "
+            "INSERT INTO `usuarios` "
             + "(`user_name`,`user_email`,`password`,`salt`) "
             + f"VALUES('{userName}','{userEmail}','{password}','{salt}');"
         )
