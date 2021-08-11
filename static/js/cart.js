@@ -9,7 +9,7 @@ let products = [
     },
     {
         name: "Bikini de colores",
-        tag: "bikini_lines",
+        tag: "biki_lines",
         price: 20,
         inCart: 0
     },
